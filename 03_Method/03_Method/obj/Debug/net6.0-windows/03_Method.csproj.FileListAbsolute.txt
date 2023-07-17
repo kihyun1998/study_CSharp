@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\03_Method\03_Method\bin\Debug\net6.0-windows\03_Method.exe
+C:\Users\kihyu\source\repos\03_Method\03_Method\bin\Debug\net6.0-windows\03_Method.deps.json
+C:\Users\kihyu\source\repos\03_Method\03_Method\bin\Debug\net6.0-windows\03_Method.runtimeconfig.json
+C:\Users\kihyu\source\repos\03_Method\03_Method\bin\Debug\net6.0-windows\03_Method.dll
+C:\Users\kihyu\source\repos\03_Method\03_Method\bin\Debug\net6.0-windows\03_Method.pdb
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\_03_Method.Form1.resources
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.dll
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\refint\03_Method.dll
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.pdb
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\03_Method.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\03_Method\03_Method\obj\Debug\net6.0-windows\ref\03_Method.dll
