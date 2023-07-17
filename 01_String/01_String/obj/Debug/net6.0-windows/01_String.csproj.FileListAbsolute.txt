@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\01_String\01_String\bin\Debug\net6.0-windows\01_String.exe
+C:\Users\kihyu\source\repos\01_String\01_String\bin\Debug\net6.0-windows\01_String.deps.json
+C:\Users\kihyu\source\repos\01_String\01_String\bin\Debug\net6.0-windows\01_String.runtimeconfig.json
+C:\Users\kihyu\source\repos\01_String\01_String\bin\Debug\net6.0-windows\01_String.dll
+C:\Users\kihyu\source\repos\01_String\01_String\bin\Debug\net6.0-windows\01_String.pdb
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\_01_String.Form1.resources
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.dll
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\refint\01_String.dll
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.pdb
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\01_String.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\01_String\01_String\obj\Debug\net6.0-windows\ref\01_String.dll
