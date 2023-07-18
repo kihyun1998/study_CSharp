@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\bin\Debug\net6.0-windows\04_Operator.exe
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\bin\Debug\net6.0-windows\04_Operator.deps.json
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\bin\Debug\net6.0-windows\04_Operator.runtimeconfig.json
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\bin\Debug\net6.0-windows\04_Operator.dll
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\bin\Debug\net6.0-windows\04_Operator.pdb
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\_04_Operator.Form1.resources
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.dll
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\refint\04_Operator.dll
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.pdb
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\04_Operator.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\04_Operator\04_Operator\obj\Debug\net6.0-windows\ref\04_Operator.dll
