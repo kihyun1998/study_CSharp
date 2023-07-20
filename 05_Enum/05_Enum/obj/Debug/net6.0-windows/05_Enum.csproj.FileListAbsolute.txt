@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\bin\Debug\net6.0-windows\05_Enum.exe
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\bin\Debug\net6.0-windows\05_Enum.deps.json
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\bin\Debug\net6.0-windows\05_Enum.runtimeconfig.json
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\bin\Debug\net6.0-windows\05_Enum.dll
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\bin\Debug\net6.0-windows\05_Enum.pdb
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\_05_Enum.Form1.resources
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.dll
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\refint\05_Enum.dll
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.pdb
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\05_Enum.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\05_Enum\05_Enum\obj\Debug\net6.0-windows\ref\05_Enum.dll
