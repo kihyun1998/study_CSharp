@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\06_Array\06_Array\bin\Debug\net6.0-windows\06_Array.exe
+C:\Users\kihyu\source\repos\06_Array\06_Array\bin\Debug\net6.0-windows\06_Array.deps.json
+C:\Users\kihyu\source\repos\06_Array\06_Array\bin\Debug\net6.0-windows\06_Array.runtimeconfig.json
+C:\Users\kihyu\source\repos\06_Array\06_Array\bin\Debug\net6.0-windows\06_Array.dll
+C:\Users\kihyu\source\repos\06_Array\06_Array\bin\Debug\net6.0-windows\06_Array.pdb
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\_06_Array.Form1.resources
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.dll
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\refint\06_Array.dll
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.pdb
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\06_Array.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\06_Array\06_Array\obj\Debug\net6.0-windows\ref\06_Array.dll
