@@ -39,6 +39,8 @@
             rbP2 = new RadioButton();
             lBoxRst1 = new ListBox();
             lBoxRst2 = new ListBox();
+            lBoxNow = new ListBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pBoxMoon).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pBoxStar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pBoxNone).BeginInit();
@@ -109,7 +111,7 @@
             // rbP1
             // 
             rbP1.AutoSize = true;
-            rbP1.Location = new Point(28, 563);
+            rbP1.Location = new Point(28, 522);
             rbP1.Name = "rbP1";
             rbP1.Size = new Size(123, 36);
             rbP1.TabIndex = 7;
@@ -120,7 +122,7 @@
             // rbP2
             // 
             rbP2.AutoSize = true;
-            rbP2.Location = new Point(826, 563);
+            rbP2.Location = new Point(827, 522);
             rbP2.Name = "rbP2";
             rbP2.Size = new Size(123, 36);
             rbP2.TabIndex = 8;
@@ -132,25 +134,46 @@
             // 
             lBoxRst1.FormattingEnabled = true;
             lBoxRst1.ItemHeight = 32;
-            lBoxRst1.Location = new Point(28, 605);
+            lBoxRst1.Location = new Point(28, 564);
             lBoxRst1.Name = "lBoxRst1";
-            lBoxRst1.Size = new Size(761, 260);
+            lBoxRst1.Size = new Size(761, 164);
             lBoxRst1.TabIndex = 11;
             // 
             // lBoxRst2
             // 
             lBoxRst2.FormattingEnabled = true;
             lBoxRst2.ItemHeight = 32;
-            lBoxRst2.Location = new Point(826, 605);
+            lBoxRst2.Location = new Point(827, 564);
             lBoxRst2.Name = "lBoxRst2";
-            lBoxRst2.Size = new Size(775, 260);
+            lBoxRst2.Size = new Size(775, 164);
             lBoxRst2.TabIndex = 12;
+            // 
+            // lBoxNow
+            // 
+            lBoxNow.BackColor = SystemColors.ScrollBar;
+            lBoxNow.FormattingEnabled = true;
+            lBoxNow.ItemHeight = 32;
+            lBoxNow.Location = new Point(28, 788);
+            lBoxNow.Name = "lBoxNow";
+            lBoxNow.Size = new Size(1574, 100);
+            lBoxNow.TabIndex = 13;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(28, 743);
+            label3.Name = "label3";
+            label3.Size = new Size(104, 32);
+            label3.TabIndex = 14;
+            label3.Text = "- 상황판";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1647, 909);
+            Controls.Add(label3);
+            Controls.Add(lBoxNow);
             Controls.Add(lBoxRst2);
             Controls.Add(lBoxRst1);
             Controls.Add(rbP2);
@@ -183,5 +206,7 @@
         private RadioButton rbP2;
         private ListBox lBoxRst1;
         private ListBox lBoxRst2;
+        private ListBox lBoxNow;
+        private Label label3;
     }
 }

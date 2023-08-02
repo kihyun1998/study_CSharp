@@ -1,5 +1,8 @@
 namespace _10_Struct
 {
+
+
+
     public partial class Form1 : Form
     {
         struct sPlayer
@@ -8,24 +11,18 @@ namespace _10_Struct
             public int iMoon;
             public int iStar;
 
-            public int iCnt;  //회
             public int iSum;  //전체합
-
-            public int CardSum(int iSun, int iMoon, int iStar)
-            {
-                return iSun + iMoon + iStar;
-            }
-
-            public string RstTxt(int iSum)
-            {
-                return string.Format("{0}회 진행 : 해: {1} 달: {2} 별: {3} ==>> 합계는 {4}입니다.",
-                                      iCnt, iSun, iMoon, iStar, iSum);
-            }
+            public int iCnt;
         }
 
         sPlayer _stPlayer1;
         sPlayer _stPlayer2;
         Random _rd = new Random();
+
+
+
+        //cPlayer _stPlayer1 = new cPlayer();
+        //cPlayer _stPlayer2 = new cPlayer();
 
         public Form1()
         {
@@ -94,6 +91,8 @@ namespace _10_Struct
             }
         }
 
+        cPlayer cPlayer = new cPlayer();    
+
         private void Rst()
         {
             string strRst = string.Empty;
@@ -101,40 +100,54 @@ namespace _10_Struct
             if (rbP1.Checked)
             {
                 _stPlayer1.iCnt++;
-                _stPlayer1.iSum = _stPlayer1.CardSum(
+                _stPlayer1.iSum = cPlayer.CardSum(
                         _stPlayer1.iSun,
                         _stPlayer1.iMoon,
                         _stPlayer1.iStar
                     );
-                strRst = _stPlayer1.RstTxt(_stPlayer1.iSum);
+                strRst = cPlayer.RstTxt(
+                    _stPlayer1.iCnt,
+                    _stPlayer1.iSun,
+                    _stPlayer1.iMoon,
+                    _stPlayer1.iStar,
+                    _stPlayer1.iSum);
                 lBoxRst1.Items.Add(strRst);
             }
             else
             {
                 _stPlayer2.iCnt++;
-                _stPlayer2.iSum = _stPlayer2.CardSum(
+                _stPlayer2.iSum = cPlayer.CardSum(
                         _stPlayer2.iSun,
                         _stPlayer2.iMoon,
                         _stPlayer2.iStar
                     );
-                strRst = _stPlayer2.RstTxt(_stPlayer2.iSum);
+                strRst = cPlayer.RstTxt(
+                    _stPlayer2.iCnt,
+                    _stPlayer2.iSun,
+                    _stPlayer2.iMoon,
+                    _stPlayer2.iStar,
+                    _stPlayer2.iSum);
                 lBoxRst2.Items.Add(strRst);
             }
             iChkChange();
 
-            if(_stPlayer1.iCnt >= 5 && _stPlayer2.iCnt >=5)
+
+
+
+            if (_stPlayer1.iCnt == _stPlayer2.iCnt)
             {
-                if (_stPlayer1.iSum > _stPlayer2.iSum)
+                lBoxNow.Items.Add(cPlayer.PlayerPair(
+                    _stPlayer2.iCnt,
+                    _stPlayer1.iSum,
+                    _stPlayer2.iSum
+                 ));
+
+                if (_stPlayer2.iCnt >= 5)
                 {
-                    MessageBox.Show("Player1 win");
-                }
-                else if(_stPlayer1.iSum < _stPlayer2.iSum) 
-                {
-                    MessageBox.Show("Player2 win");
-                }
-                else
-                {
-                    MessageBox.Show("Draw");
+                    lBoxNow.Items.Add(cPlayer.PlayerRst(
+                                _stPlayer1.iSum,
+                                _stPlayer2.iSum
+                        ));
                 }
             }
         }

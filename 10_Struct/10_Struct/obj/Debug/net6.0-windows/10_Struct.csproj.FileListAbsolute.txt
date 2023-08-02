@@ -1,5 +1,4 @@
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\10_Struct.csproj.AssemblyReference.cache
-C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\_10_Struct.Form1.resources
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\_10_Struct.Properties.Resources.resources
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\10_Struct.csproj.GenerateResource.cache
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\10_Struct.GeneratedMSBuildEditorConfig.editorconfig
@@ -16,3 +15,4 @@ C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\refint\
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\10_Struct.pdb
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\10_Struct.genruntimeconfig.cache
 C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\ref\10_Struct.dll
+C:\Users\kihyu\source\repos\10_Struct\10_Struct\obj\Debug\net6.0-windows\_10_Struct.Form1.resources
