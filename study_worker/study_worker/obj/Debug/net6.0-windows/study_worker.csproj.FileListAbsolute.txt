@@ -1,0 +1,17 @@
+C:\Users\kihyu\source\repos\study_worker\study_worker\bin\Debug\net6.0-windows\study_worker.exe
+C:\Users\kihyu\source\repos\study_worker\study_worker\bin\Debug\net6.0-windows\study_worker.deps.json
+C:\Users\kihyu\source\repos\study_worker\study_worker\bin\Debug\net6.0-windows\study_worker.runtimeconfig.json
+C:\Users\kihyu\source\repos\study_worker\study_worker\bin\Debug\net6.0-windows\study_worker.dll
+C:\Users\kihyu\source\repos\study_worker\study_worker\bin\Debug\net6.0-windows\study_worker.pdb
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.csproj.AssemblyReference.cache
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.Form1.resources
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.csproj.GenerateResource.cache
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.AssemblyInfoInputs.cache
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.AssemblyInfo.cs
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.csproj.CoreCompileInputs.cache
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.dll
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\refint\study_worker.dll
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.pdb
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\study_worker.genruntimeconfig.cache
+C:\Users\kihyu\source\repos\study_worker\study_worker\obj\Debug\net6.0-windows\ref\study_worker.dll
