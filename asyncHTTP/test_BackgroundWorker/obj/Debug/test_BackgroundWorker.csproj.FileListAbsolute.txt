@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.Form1.resources
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.Properties.Resources.resources
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.csproj.GenerateResource.cache
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\bin\Debug\test_BackgroundWorker.exe.config
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\bin\Debug\test_BackgroundWorker.exe
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\bin\Debug\test_BackgroundWorker.pdb
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.exe
+C:\Users\User\source\repos\test_BackgroundWorker\test_BackgroundWorker\obj\Debug\test_BackgroundWorker.pdb
