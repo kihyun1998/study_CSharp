@@ -11,29 +11,33 @@ namespace study_Thread
             ¿À¹ø,
         }
 
-        int lx = 0;
-        int ly = 0;
+        int _lx = 0;
+        int _ly = 0;
+        List<Play> lplay = new List<Play>();    
 
         public Form1()
         {
             InitializeComponent();
-            lx = this.Location.X;
-            ly = this.Location.Y;
+
+            _lx = this.Location.X;
+            _ly = this.Location.Y;
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            lx = this.Location.X + this.Size.Width;
-            ly = this.Location.Y;
+            _lx = this.Location.X + this.Size.Width;
+            _ly = this.Location.Y;
 
-            for(int i=0; i < nPlayerCnt.Value; i++)
+            for (int i = 0; i < nPlayerCnt.Value; i++)
             {
                 Play f1 = new Play(((enumPlayer)i).ToString());
-                f1.Location = new Point(lx, ly + f1.Height * i);
+                f1.StartPosition = FormStartPosition.Manual;
+                f1.Location = new Point(_lx, _ly + f1.Height * i);
 
                 f1.eventdelMsg += F1_eventdelMsg;
                 f1.Show();
                 f1.fThreadStart();
+                lplay.Add(f1);  
             }
         }
 
@@ -51,6 +55,15 @@ namespace study_Thread
                 }));
             }
             return 0;
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            foreach(var p in lplay)
+            {
+                p.ThreadJoin();
+                p.ThreadInterrupt();
+            }
         }
     }
 }

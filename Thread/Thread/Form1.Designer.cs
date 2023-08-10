@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            label1 = new Label();
             nPlayerCnt = new NumericUpDown();
+            label1 = new Label();
             btnStart = new Button();
             lBoxRst = new ListBox();
             groupBox1.SuspendLayout();
@@ -48,6 +48,13 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Menu";
             // 
+            // nPlayerCnt
+            // 
+            nPlayerCnt.Location = new Point(251, 83);
+            nPlayerCnt.Name = "nPlayerCnt";
+            nPlayerCnt.Size = new Size(240, 39);
+            nPlayerCnt.TabIndex = 1;
+            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -56,13 +63,6 @@
             label1.Size = new Size(155, 32);
             label1.TabIndex = 0;
             label1.Text = "플레이어 수 :";
-            // 
-            // nPlayerCnt
-            // 
-            nPlayerCnt.Location = new Point(251, 83);
-            nPlayerCnt.Name = "nPlayerCnt";
-            nPlayerCnt.Size = new Size(240, 39);
-            nPlayerCnt.TabIndex = 1;
             // 
             // btnStart
             // 
@@ -93,6 +93,7 @@
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            FormClosing += Form1_FormClosing;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nPlayerCnt).EndInit();
