@@ -37,9 +37,11 @@ namespace FileSaveLoad
             // 
             // tBoxSave
             // 
-            this.tBoxSave.Location = new System.Drawing.Point(87, 76);
+            this.tBoxSave.Location = new System.Drawing.Point(87, 25);
+            this.tBoxSave.Multiline = true;
             this.tBoxSave.Name = "tBoxSave";
-            this.tBoxSave.Size = new System.Drawing.Size(601, 25);
+            this.tBoxSave.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tBoxSave.Size = new System.Drawing.Size(601, 76);
             this.tBoxSave.TabIndex = 0;
             // 
             // btnSave
@@ -60,12 +62,15 @@ namespace FileSaveLoad
             this.btnLoad.TabIndex = 2;
             this.btnLoad.Text = "load";
             this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // tBoxLoad
             // 
             this.tBoxLoad.Location = new System.Drawing.Point(87, 323);
+            this.tBoxLoad.Multiline = true;
             this.tBoxLoad.Name = "tBoxLoad";
-            this.tBoxLoad.Size = new System.Drawing.Size(601, 25);
+            this.tBoxLoad.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tBoxLoad.Size = new System.Drawing.Size(601, 69);
             this.tBoxLoad.TabIndex = 3;
             // 
             // Form1

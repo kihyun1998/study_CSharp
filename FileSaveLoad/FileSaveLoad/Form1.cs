@@ -32,5 +32,18 @@ namespace FileSaveLoad
             string txt = tBoxSave.Text;
             System.IO.File.WriteAllText(_filePath, txt);
         }
+
+        private void btnLoad_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string[] txt = System.IO.File.ReadAllLines(_filePath);
+                tBoxLoad.Text = txt[0];
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }
