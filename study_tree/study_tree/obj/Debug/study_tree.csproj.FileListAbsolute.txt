@@ -8,3 +8,13 @@ C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.csproj.Gen
 C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.exe
 C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.pdb
+C:\study_CSharp\study_tree\study_tree\bin\Debug\study_tree.exe.config
+C:\study_CSharp\study_tree\study_tree\bin\Debug\study_tree.exe
+C:\study_CSharp\study_tree\study_tree\bin\Debug\study_tree.pdb
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.csproj.AssemblyReference.cache
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.Form1.resources
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.Properties.Resources.resources
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.csproj.GenerateResource.cache
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.csproj.CoreCompileInputs.cache
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.exe
+C:\study_CSharp\study_tree\study_tree\obj\Debug\study_tree.pdb
