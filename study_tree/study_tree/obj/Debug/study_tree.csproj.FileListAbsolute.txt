@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\study_tree\study_tree\bin\Debug\study_tree.exe.config
+C:\Users\User\source\repos\study_tree\study_tree\bin\Debug\study_tree.exe
+C:\Users\User\source\repos\study_tree\study_tree\bin\Debug\study_tree.pdb
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.Form1.resources
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.Properties.Resources.resources
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.csproj.GenerateResource.cache
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.exe
+C:\Users\User\source\repos\study_tree\study_tree\obj\Debug\study_tree.pdb
