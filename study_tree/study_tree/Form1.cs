@@ -19,55 +19,36 @@ namespace study_tree
         public Form1()
         {
             InitializeComponent();
-            LoadFolders(_rootPath);
+            ListDirectory(treeView1, _rootPath);
         }
 
-        private void LoadFolders(string rootPath)
+
+        private void ListDirectory(TreeView treeView, string path)
         {
-
-            DirectoryInfo di = new DirectoryInfo(_rootPath);
-            if (!di.Exists)
+            DirectoryInfo isExists = new DirectoryInfo(_rootPath);
+            if (!isExists.Exists)
             {
-                di.Create();
+                isExists.Create();
             }
-
-            try
-            {
-                DirectoryInfo rd = new DirectoryInfo(rootPath);
-                TreeNode rNode = new TreeNode("My Drive");
-                AddSubdirectories(rNode, rd);
-                folderTreeView.Nodes.Add(rNode);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(string.Format("Error: {0}", ex.Message.ToString()));
-            }
+            treeView.Nodes.Clear();
+            var rootDirectoryInfo = new DirectoryInfo(path);
+            treeView.Nodes.Add(CreateDirectoryNode(rootDirectoryInfo));
         }
 
-        private void AddSubdirectories(TreeNode parent, DirectoryInfo di)
+        private static TreeNode CreateDirectoryNode(DirectoryInfo directoryInfo)
         {
-            DirectoryInfo[] subDirectories = null;
-            try
+            var directoryNode = new TreeNode(directoryInfo.Name);
+            
+            foreach (var directory in directoryInfo.GetDirectories())
             {
-                subDirectories = di.GetDirectories();
-            }
-            catch (UnauthorizedAccessException)
+                directoryNode.Nodes.Add(CreateDirectoryNode(directory));
+            }    
+            foreach (var file in directoryInfo.GetFiles())
             {
-                parent.Nodes.Add(new TreeNode("[Access Denied]"));
-                return;
+                directoryNode.Nodes.Add(new TreeNode(file.Name));
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(string.Format("Error: {0}", ex.Message.ToString()));
-                return;
-            }
-
-            TreeNode subdirectoryNode;
-            foreach (DirectoryInfo subdir in subDirectories)
-            {
-                subdirectoryNode = parent.Nodes.Add(subdir.Name);
-                AddSubdirectories(subdirectoryNode, subdir);
-            }
+                
+            return directoryNode;
         }
     }
 }
