@@ -50,5 +50,27 @@ namespace study_tree
                 
             return directoryNode;
         }
+
+        private void DisplayFileContent(string filePath)
+        {
+            try
+            {
+                tBoxRst.Text = File.ReadAllText(filePath);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
+
+        private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
+        {
+            MessageBox.Show(e.Node.FullPath)
+            string selectedNodePath = Path.Combine(e.Node.FullPath);
+            if (File.Exists(selectedNodePath))
+            {
+                DisplayFileContent(selectedNodePath);
+            }
+        }
     }
 }

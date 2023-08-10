@@ -30,6 +30,7 @@ namespace study_tree
         private void InitializeComponent()
         {
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.tBoxRst = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // treeView1
@@ -38,22 +39,34 @@ namespace study_tree
             this.treeView1.Name = "treeView1";
             this.treeView1.Size = new System.Drawing.Size(202, 358);
             this.treeView1.TabIndex = 0;
+            this.treeView1.NodeMouseDoubleClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.treeView1_NodeMouseDoubleClick);
+            // 
+            // tBoxRst
+            // 
+            this.tBoxRst.Location = new System.Drawing.Point(380, 42);
+            this.tBoxRst.Multiline = true;
+            this.tBoxRst.Name = "tBoxRst";
+            this.tBoxRst.Size = new System.Drawing.Size(316, 282);
+            this.tBoxRst.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.tBoxRst);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.TextBox tBoxRst;
     }
 }
 
