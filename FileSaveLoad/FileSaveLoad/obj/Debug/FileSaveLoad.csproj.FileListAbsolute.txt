@@ -8,3 +8,13 @@ C:\Users\User\source\repos\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.cspr
 C:\Users\User\source\repos\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.exe
 C:\Users\User\source\repos\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.pdb
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\bin\Debug\FileSaveLoad.exe.config
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\bin\Debug\FileSaveLoad.exe
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\bin\Debug\FileSaveLoad.pdb
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.csproj.AssemblyReference.cache
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.Form1.resources
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.Properties.Resources.resources
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.csproj.GenerateResource.cache
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.csproj.CoreCompileInputs.cache
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.exe
+C:\Users\User\c#\study_CSharp\FileSaveLoad\FileSaveLoad\obj\Debug\FileSaveLoad.pdb
