@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33920.266
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointToScreen", "PointToScreen\PointToScreen.csproj", "{736EE8FE-2AC5-462E-8D37-E6504AD3F1EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{736EE8FE-2AC5-462E-8D37-E6504AD3F1EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{736EE8FE-2AC5-462E-8D37-E6504AD3F1EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{736EE8FE-2AC5-462E-8D37-E6504AD3F1EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{736EE8FE-2AC5-462E-8D37-E6504AD3F1EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99130F41-151A-49AB-A5B5-680D312F72E8}
+	EndGlobalSection
+EndGlobal
