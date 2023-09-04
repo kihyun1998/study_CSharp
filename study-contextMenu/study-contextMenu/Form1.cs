@@ -23,7 +23,7 @@ namespace study_contextMenu
             pBtn.X += button1.Width;
             //cMenu.Show(pBtn);
 
-            ContextMenuStrip cm = new System.Windows.Forms.ContextMenuStrip();
+            ContextMenuStrip cm = new ContextMenuStrip();
 
             ToolStripMenuItem i1 = new ToolStripMenuItem("A");
 
