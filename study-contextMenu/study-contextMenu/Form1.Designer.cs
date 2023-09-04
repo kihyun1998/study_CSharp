@@ -51,19 +51,19 @@ namespace study_contextMenu
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(93, 24);
             this.toolStripMenuItem2.Text = "１";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(93, 24);
             this.toolStripMenuItem4.Text = "２";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(93, 24);
             this.toolStripMenuItem1.Text = "３";
             // 
             // button1

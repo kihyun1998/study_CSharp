@@ -21,7 +21,22 @@ namespace study_contextMenu
         {
             Point pBtn = button1.PointToScreen(Point.Empty);
             pBtn.X += button1.Width;
-            cMenu.Show(pBtn);
+            //cMenu.Show(pBtn);
+
+            ContextMenuStrip cm = new System.Windows.Forms.ContextMenuStrip();
+
+            ToolStripMenuItem i1 = new ToolStripMenuItem("A");
+
+            i1.Click += A;
+            cm.Items.Add(i1);
+
+            cm.Show(pBtn);
+
+        }
+        
+        private void A(object sender,EventArgs e)
+        {
+            MessageBox.Show("A");
         }
     }
 }
