@@ -8,8 +8,8 @@ namespace ForStartingApp
 {
     class SavePathXML
     {
-        public string _PUTTY;
-        public string _FILEZILLA;
-        public string MOBAXTERM;
+        public string _FullPath;
+        public string _FileName;
+        public string _ExePath;
     }
 }

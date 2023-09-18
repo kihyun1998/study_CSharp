@@ -38,16 +38,16 @@ namespace ForStartingApp
             this.label3 = new System.Windows.Forms.Label();
             this.btnFilezilla = new System.Windows.Forms.Button();
             this.btnMobaXterm = new System.Windows.Forms.Button();
-            this.btnMobaxPath = new System.Windows.Forms.Button();
+            this.btnMobaXtermPath = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tBoxMobaxPath = new System.Windows.Forms.TextBox();
-            this.tBoxZillaPath = new System.Windows.Forms.TextBox();
+            this.tBoxMobaXtermPath = new System.Windows.Forms.TextBox();
+            this.tBoxFileZillaPath = new System.Windows.Forms.TextBox();
             this.tBoxPuttyPath = new System.Windows.Forms.TextBox();
             this.btnPuttyPath = new System.Windows.Forms.Button();
-            this.btnZillaPath = new System.Windows.Forms.Button();
+            this.btnFileZillaPath = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -130,27 +130,27 @@ namespace ForStartingApp
             this.btnMobaXterm.UseVisualStyleBackColor = true;
             this.btnMobaXterm.Click += new System.EventHandler(this.btnMobaXterm_Click);
             // 
-            // btnMobaxPath
+            // btnMobaXtermPath
             // 
-            this.btnMobaxPath.Location = new System.Drawing.Point(316, 143);
-            this.btnMobaxPath.Name = "btnMobaxPath";
-            this.btnMobaxPath.Size = new System.Drawing.Size(70, 28);
-            this.btnMobaxPath.TabIndex = 12;
-            this.btnMobaxPath.Text = "설정";
-            this.btnMobaxPath.UseVisualStyleBackColor = true;
-            this.btnMobaxPath.Click += new System.EventHandler(this.btnMobaxPath_Click);
+            this.btnMobaXtermPath.Location = new System.Drawing.Point(316, 143);
+            this.btnMobaXtermPath.Name = "btnMobaXtermPath";
+            this.btnMobaXtermPath.Size = new System.Drawing.Size(70, 28);
+            this.btnMobaXtermPath.TabIndex = 12;
+            this.btnMobaXtermPath.Text = "설정";
+            this.btnMobaXtermPath.UseVisualStyleBackColor = true;
+            this.btnMobaXtermPath.Click += new System.EventHandler(this.btnMobaXtermPath_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.tBoxMobaxPath);
-            this.groupBox1.Controls.Add(this.tBoxZillaPath);
+            this.groupBox1.Controls.Add(this.tBoxMobaXtermPath);
+            this.groupBox1.Controls.Add(this.tBoxFileZillaPath);
             this.groupBox1.Controls.Add(this.tBoxPuttyPath);
             this.groupBox1.Controls.Add(this.btnPuttyPath);
-            this.groupBox1.Controls.Add(this.btnZillaPath);
-            this.groupBox1.Controls.Add(this.btnMobaxPath);
+            this.groupBox1.Controls.Add(this.btnFileZillaPath);
+            this.groupBox1.Controls.Add(this.btnMobaXtermPath);
             this.groupBox1.Location = new System.Drawing.Point(33, 222);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(404, 198);
@@ -185,24 +185,27 @@ namespace ForStartingApp
             this.label4.TabIndex = 14;
             this.label4.Text = "Putty 경로";
             // 
-            // tBoxMobaxPath
+            // tBoxMobaXtermPath
             // 
-            this.tBoxMobaxPath.Location = new System.Drawing.Point(126, 143);
-            this.tBoxMobaxPath.Name = "tBoxMobaxPath";
-            this.tBoxMobaxPath.Size = new System.Drawing.Size(158, 25);
-            this.tBoxMobaxPath.TabIndex = 17;
+            this.tBoxMobaXtermPath.Location = new System.Drawing.Point(126, 143);
+            this.tBoxMobaXtermPath.Name = "tBoxMobaXtermPath";
+            this.tBoxMobaXtermPath.ReadOnly = true;
+            this.tBoxMobaXtermPath.Size = new System.Drawing.Size(158, 25);
+            this.tBoxMobaXtermPath.TabIndex = 17;
             // 
-            // tBoxZillaPath
+            // tBoxFileZillaPath
             // 
-            this.tBoxZillaPath.Location = new System.Drawing.Point(126, 97);
-            this.tBoxZillaPath.Name = "tBoxZillaPath";
-            this.tBoxZillaPath.Size = new System.Drawing.Size(158, 25);
-            this.tBoxZillaPath.TabIndex = 16;
+            this.tBoxFileZillaPath.Location = new System.Drawing.Point(126, 97);
+            this.tBoxFileZillaPath.Name = "tBoxFileZillaPath";
+            this.tBoxFileZillaPath.ReadOnly = true;
+            this.tBoxFileZillaPath.Size = new System.Drawing.Size(158, 25);
+            this.tBoxFileZillaPath.TabIndex = 16;
             // 
             // tBoxPuttyPath
             // 
             this.tBoxPuttyPath.Location = new System.Drawing.Point(126, 47);
             this.tBoxPuttyPath.Name = "tBoxPuttyPath";
+            this.tBoxPuttyPath.ReadOnly = true;
             this.tBoxPuttyPath.Size = new System.Drawing.Size(158, 25);
             this.tBoxPuttyPath.TabIndex = 15;
             // 
@@ -216,15 +219,15 @@ namespace ForStartingApp
             this.btnPuttyPath.UseVisualStyleBackColor = true;
             this.btnPuttyPath.Click += new System.EventHandler(this.btnPuttyPath_Click_Click);
             // 
-            // btnZillaPath
+            // btnFileZillaPath
             // 
-            this.btnZillaPath.Location = new System.Drawing.Point(316, 97);
-            this.btnZillaPath.Name = "btnZillaPath";
-            this.btnZillaPath.Size = new System.Drawing.Size(70, 25);
-            this.btnZillaPath.TabIndex = 13;
-            this.btnZillaPath.Text = "설정";
-            this.btnZillaPath.UseVisualStyleBackColor = true;
-            this.btnZillaPath.Click += new System.EventHandler(this.btnZillaPath_Click);
+            this.btnFileZillaPath.Location = new System.Drawing.Point(316, 97);
+            this.btnFileZillaPath.Name = "btnFileZillaPath";
+            this.btnFileZillaPath.Size = new System.Drawing.Size(70, 25);
+            this.btnFileZillaPath.TabIndex = 13;
+            this.btnFileZillaPath.Text = "설정";
+            this.btnFileZillaPath.UseVisualStyleBackColor = true;
+            this.btnFileZillaPath.Click += new System.EventHandler(this.btnFileZillaPath_Click);
             // 
             // Form1
             // 
@@ -261,16 +264,16 @@ namespace ForStartingApp
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnFilezilla;
         private System.Windows.Forms.Button btnMobaXterm;
-        private System.Windows.Forms.Button btnMobaxPath;
+        private System.Windows.Forms.Button btnMobaXtermPath;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tBoxMobaxPath;
-        private System.Windows.Forms.TextBox tBoxZillaPath;
-        private System.Windows.Forms.TextBox tBoxPuttyPath;
         private System.Windows.Forms.Button btnPuttyPath;
-        private System.Windows.Forms.Button btnZillaPath;
+        private System.Windows.Forms.Button btnFileZillaPath;
+        public System.Windows.Forms.TextBox tBoxMobaXtermPath;
+        public System.Windows.Forms.TextBox tBoxFileZillaPath;
+        public System.Windows.Forms.TextBox tBoxPuttyPath;
     }
 }
 

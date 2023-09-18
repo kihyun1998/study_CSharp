@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Diagnostics;
+using System.Xml;
 using System.Windows.Forms;
 
 namespace ForStartingApp
@@ -17,120 +18,200 @@ namespace ForStartingApp
         string _user = string.Empty;
         string _password = string.Empty;
         string _IP = string.Empty;
+        string _path = string.Empty;
+        string _name = string.Empty;
+   
+        
+        
 
-        string _puttyCommand = "C:\\Users\\User\\Desktop\\app && putty.exe -ssh ";
-        string _filezillaCommand = "C:\\Program Files\\FileZilla FTP Client && filezilla.exe sftp://";
-        string _mobaXtermCommand = "C:\\Program Files (x86)\\Mobatek\\MobaXterm && MobaXterm.exe -newtab \"sshpass -p ";
-
+        public static Form1 form1;
         public Form1()
         {
             InitializeComponent();
+            form1 = this;
+            if (File.Exists(HandleXML._xmlPath))
+            {
+                HandleXML.Load();
+            }
+            else
+            {
+                SavePathXML spx = new SavePathXML();
+                HandleXML.Save(spx);
+            }
+            
         }
 
         private void btnPutty_Click(object sender, EventArgs e)
         {
+            string type = "PUTTY";
+
             _user = tBoxId.Text;
             _password = tBoxPw.Text;
             _IP = tBoxIp.Text;
+            _path = HandleXML.GetPath(type);
+            _name = HandleXML.GetName(type);
 
-            ProcessStartInfo cmd = new ProcessStartInfo();
-            Process process = new Process();
-            cmd.FileName = @"cmd";
-            cmd.WindowStyle = ProcessWindowStyle.Hidden;
-            cmd.CreateNoWindow = true; // 새 창 띄우지 않음
-            cmd.UseShellExecute = false; // 운영체제 쉘 사용안함
 
-            /*
-            StandardOutput : 애플리케이션의 텍스트 출력 스트림
-            StandardInput : 애플리케이션의 입력 스트림
-            StandardError : 애플리케이션의 오류 출력 스트림
-            */
+            if (_path == string.Empty)
+            {
+                MessageBox.Show("Error : 실행 파일 경로 설정이 되지 않았습니다.");
+            }
+            else
+            {
 
-            cmd.RedirectStandardInput = true; // 입력을 StandardInput 스트림에서 읽음
-            cmd.RedirectStandardError = true; // 오류 출력을 StandardError 스트림에서 사용
+                ProcessStartInfo cmd = new ProcessStartInfo();
+                Process process = new Process();
+                cmd.FileName = @"cmd";
+                cmd.WindowStyle = ProcessWindowStyle.Hidden;
+                cmd.CreateNoWindow = true;
+                cmd.UseShellExecute = false;
 
-            process.EnableRaisingEvents = false; // 프로세스 종료 시 Exited 이벤트 발생 안함
-            process.StartInfo = cmd;
-            process.Start();
-            process.StandardInput.Write(string.Format("cd {0}{1}@{2} 22 -pw {3}\r\n",_puttyCommand,_user,_IP,_password));
-            process.StandardInput.Close();
+                cmd.RedirectStandardInput = true;
+                cmd.RedirectStandardError = true;
 
-            process.WaitForExit();
-            process.Close();
+                process.EnableRaisingEvents = false;
+                process.StartInfo = cmd;
+                process.Start();
+                process.StandardInput.Write(string.Format("cd {0} && {1} -ssh {2}@{3} 22 -pw {4}\r\n", _path, _name, _user, _IP, _password));
+                process.StandardInput.Close();
+
+                process.WaitForExit();
+                process.Close();
+            }
         }
 
         private void btnFilezilla_Click(object sender, EventArgs e)
         {
+            string type = "FILEZILLA";
+
             _user = tBoxId.Text;
             _password = tBoxPw.Text;
             _IP = tBoxIp.Text;
+            _path = HandleXML.GetPath(type);
+            _name = HandleXML.GetName(type);
 
-            ProcessStartInfo cmd = new ProcessStartInfo();
-            Process process = new Process();
-            cmd.FileName = @"cmd";
-            cmd.WindowStyle = ProcessWindowStyle.Hidden;
-            cmd.CreateNoWindow = true; // 새 창 띄우지 않음
-            cmd.UseShellExecute = false; // 운영체제 쉘 사용안함
+            if (_path == string.Empty)
+            {
+                MessageBox.Show("Error : 실행 파일 경로 설정이 되지 않았습니다.");
+            }
+            else
+            {
+                ProcessStartInfo cmd = new ProcessStartInfo();
+                Process process = new Process();
+                cmd.FileName = @"cmd";
+                cmd.WindowStyle = ProcessWindowStyle.Hidden;
+                cmd.CreateNoWindow = true; 
+                cmd.UseShellExecute = false;
 
-            cmd.RedirectStandardInput = true; // 입력을 StandardInput 스트림에서 읽음
-            cmd.RedirectStandardError = true; // 오류 출력을 StandardError 스트림에서 사용
+                cmd.RedirectStandardInput = true;
+                cmd.RedirectStandardError = true;
 
-            process.EnableRaisingEvents = false; // 프로세스 종료 시 Exited 이벤트 발생 안함
-            process.StartInfo = cmd;
-            process.Start();
-            process.StandardInput.Write(string.Format("cd {0}{1}:{2}@{3}\r\n", _filezillaCommand, _user, _password, _IP));
-            process.StandardInput.Close();
+                process.EnableRaisingEvents = false;
+                process.StartInfo = cmd;
+                process.Start();
+                process.StandardInput.Write(string.Format("cd {0} && {1} sftp://{2}:{3}@{4}\r\n", _path,_name, _user, _password, _IP));
+                process.StandardInput.Close();
 
-            process.WaitForExit();
-            process.Close();
+                process.WaitForExit();
+                process.Close();
+            }
         }
 
         private void btnMobaXterm_Click(object sender, EventArgs e)
         {
+            string type = "MOBAXTERM";
+
             _user = tBoxId.Text;
             _password = tBoxPw.Text;
             _IP = tBoxIp.Text;
+            _path = HandleXML.GetPath(type);
+            _name = HandleXML.GetName(type);
 
-            ProcessStartInfo cmd = new ProcessStartInfo();
-            Process process = new Process();
-            cmd.FileName = @"cmd";
-            cmd.WindowStyle = ProcessWindowStyle.Hidden;
-            cmd.CreateNoWindow = true; // 새 창 띄우지 않음
-            cmd.UseShellExecute = false; // 운영체제 쉘 사용안함
+            if (_path == string.Empty)
+            {
+                MessageBox.Show("Error : 실행 파일 경로 설정이 되지 않았습니다.");
+            }
+            else
+            {
+                ProcessStartInfo cmd = new ProcessStartInfo();
+                Process process = new Process();
+                cmd.FileName = @"cmd";
+                cmd.WindowStyle = ProcessWindowStyle.Hidden;
+                cmd.CreateNoWindow = true;
+                cmd.UseShellExecute = false;
 
-            cmd.RedirectStandardInput = true; // 입력을 StandardInput 스트림에서 읽음
-            cmd.RedirectStandardError = true; // 오류 출력을 StandardError 스트림에서 사용
+                cmd.RedirectStandardInput = true;
+                cmd.RedirectStandardError = true;
 
-            process.EnableRaisingEvents = false; // 프로세스 종료 시 Exited 이벤트 발생 안함
-            process.StartInfo = cmd;
-            process.Start();
-            process.StandardInput.Write(string.Format("cd {0}{1} ssh -o StrictHostKeyChecking=no {2}@{3}\"\r\n", _mobaXtermCommand,_password,_user,_IP));
-            process.StandardInput.Close();
+                process.EnableRaisingEvents = false;
+                process.StartInfo = cmd;
+                process.Start();
+                //string _mobaXtermCommand = "C:\\Program Files (x86)\\Mobatek\\MobaXterm && MobaXterm.exe -newtab \"sshpass -p ";
+                process.StandardInput.Write(string.Format("cd {0} && {1} -newtab \" sshpass -p {2} ssh -o StrictHostKeyChecking=no {3}@{4}\" \r\n", _path, _name, _password, _user, _IP));
+                process.StandardInput.Close();
 
-            process.WaitForExit();
-            process.Close();
+                process.WaitForExit();
+                process.Close();
+            }
         }
 
         private void btnPuttyPath_Click_Click(object sender, EventArgs e)
         {
-            string path = getFilePath();
-            tBoxPuttyPath.Text = path;
+            string type = "PUTTY";
+            List<string> paths = getFilePaths();
+            SavePathXML spx = new SavePathXML();
+            spx._FullPath = paths[0];
+            spx._FileName = paths[1];
+            spx._ExePath = paths[2];
+
+            HandleXML.Modify(spx, type);
+
+            tBoxPuttyPath.Text = paths[0];
         }
 
-        private void btnZillaPath_Click(object sender, EventArgs e)
+        private void btnFileZillaPath_Click(object sender, EventArgs e)
         {
-            string path = getFilePath();
-            tBoxZillaPath.Text = path;
+            string type = "FILEZILLA";
+            List<string> paths = getFilePaths();
+            SavePathXML spx = new SavePathXML();
+            spx._FullPath = paths[0];
+            spx._FileName = paths[1];
+            spx._ExePath = paths[2];
+
+            HandleXML.Modify(spx, type);
+
+            tBoxFileZillaPath.Text = paths[0];
         }
 
-        private void btnMobaxPath_Click(object sender, EventArgs e)
+        private void btnMobaXtermPath_Click(object sender, EventArgs e)
         {
-            string path = getFilePath();
-            tBoxMobaxPath.Text = path;
+            string type = "MOBAXTERM";
+            List<string> paths = getFilePaths();
+            SavePathXML spx = new SavePathXML();
+            spx._FullPath = paths[0];
+            spx._FileName = paths[1];
+            spx._ExePath = paths[2];
+
+            HandleXML.Modify(spx, type);
+
+            tBoxMobaXtermPath.Text = paths[0];
         }
-        private string getFilePath()
+
+
+
+
+
+        /////////////////
+        /// paths[0] = 전체 경로
+        /// paths[1] = 파일 이름
+        /// paths[2] = 실행 경로
+        private List<string> getFilePaths()
         {
-            string filePath = string.Empty;
+            List<string> paths = new List<string> { }; 
+
+            string fullPath = string.Empty;
+            string fileName = string.Empty;
+            string exePath = string.Empty;
 
             using (OpenFileDialog fd = new OpenFileDialog())
             {
@@ -140,11 +221,16 @@ namespace ForStartingApp
 
                 if (fd.ShowDialog() == DialogResult.OK)
                 {
-                    filePath = fd.FileName;
+                    fullPath = fd.FileName;
+                    fileName = fd.SafeFileName;
+                    exePath = fullPath.Substring(0, (fullPath.Length - fileName.Length));
                 }
+                paths.Add(fullPath);
+                paths.Add(fileName);
+                paths.Add(exePath);
             }
 
-            return filePath;
+            return paths;
         }
     }
 }
