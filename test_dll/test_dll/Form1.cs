@@ -17,7 +17,7 @@ namespace test_dll
         // %SystemRoot% 에 dll파일 있어야함
         // 보통 C:\Windows에 두면 된다.
         [DllImport("helloTest.dll")]
-        public static extern IntPtr HelloTest(byte[] name);
+        public static extern IntPtr HelloTest(byte[] name) ;
 
 
         public Form1()
@@ -27,10 +27,11 @@ namespace test_dll
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var output = HelloTest(Encoding.Default.GetBytes(tBoxInput.Text));
-            string str = Marshal.PtrToStringAnsi(output);
-            
-            tBoxOutput.Text = str;
+            string name = tBoxURL.Text;
+            var pStr = HelloTest(Encoding.Default.GetBytes(name));
+            string str = Marshal.PtrToStringAnsi(pStr);
+            tBoxCookie.Text = str;
+
         }
     }
 }

@@ -29,40 +29,21 @@ namespace FileSaveLoad
             {
                 di.Create();
             }
-
-            List<string> writeList = new List<string>();
-            writeList.Add(cBoxMethod.Text);
-            writeList.Add(tBoxUrl.Text);
-            writeList.Add(tBoxCookie.Text);
-            writeList.Add(tBoxMsg.Text);
-
-            string[] writeArr = writeList.ToArray();
-
-            System.IO.File.WriteAllLines(_filePath, writeArr);
+            string txt = tBoxSave.Text;
+            System.IO.File.WriteAllText(_filePath, txt);
         }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
             try
             {
-                string[] txts = System.IO.File.ReadAllLines(_filePath);
-                
-                foreach (var txt in txts)
-                {
-                    tBoxLoad.Text += txt+"\r\n";
-                }
+                string[] txt = System.IO.File.ReadAllLines(_filePath);
+                tBoxLoad.Text = txt[0];
             }
             catch(Exception ex)
             {
                 MessageBox.Show(ex.ToString());
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            string[] method = { "GET", "POST", "PUT", "DELETE" };
-            cBoxMethod.Items.AddRange(method);
-            cBoxMethod.SelectedIndex = 0;
         }
     }
 }

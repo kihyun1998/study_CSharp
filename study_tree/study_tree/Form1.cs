@@ -65,18 +65,11 @@ namespace study_tree
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            string selectPath = string.Format("..\\{0}", e.Node.FullPath);
-            string p1 = Path.GetFullPath(@selectPath);
-            MessageBox.Show(p1);
-
-            try
+            MessageBox.Show(e.Node.FullPath)
+            string selectedNodePath = Path.Combine(e.Node.FullPath);
+            if (File.Exists(selectedNodePath))
             {
-                string txt = System.IO.File.ReadAllText(p1);
-                MessageBox.Show(txt);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
+                DisplayFileContent(selectedNodePath);
             }
         }
     }

@@ -29,25 +29,28 @@ namespace test_dll
         /// </summary>
         private void InitializeComponent()
         {
-            this.tBoxInput = new System.Windows.Forms.TextBox();
+            this.tBoxURL = new System.Windows.Forms.TextBox();
             this.tBoxOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tBoxCookie = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // tBoxInput
+            // tBoxURL
             // 
-            this.tBoxInput.Location = new System.Drawing.Point(153, 127);
-            this.tBoxInput.Name = "tBoxInput";
-            this.tBoxInput.Size = new System.Drawing.Size(428, 25);
-            this.tBoxInput.TabIndex = 0;
+            this.tBoxURL.Location = new System.Drawing.Point(153, 127);
+            this.tBoxURL.Name = "tBoxURL";
+            this.tBoxURL.Size = new System.Drawing.Size(428, 25);
+            this.tBoxURL.TabIndex = 0;
             // 
             // tBoxOutput
             // 
             this.tBoxOutput.Location = new System.Drawing.Point(153, 228);
+            this.tBoxOutput.Multiline = true;
             this.tBoxOutput.Name = "tBoxOutput";
-            this.tBoxOutput.Size = new System.Drawing.Size(428, 25);
+            this.tBoxOutput.Size = new System.Drawing.Size(428, 185);
             this.tBoxOutput.TabIndex = 1;
             // 
             // label1
@@ -55,16 +58,16 @@ namespace test_dll
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(62, 130);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 19);
+            this.label1.Size = new System.Drawing.Size(44, 19);
             this.label1.TabIndex = 2;
-            this.label1.Text = "입력";
+            this.label1.Text = "URL";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(62, 231);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 19);
+            this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "출력";
             // 
@@ -78,16 +81,34 @@ namespace test_dll
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(62, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 19);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Cookie";
+            // 
+            // tBoxCookie
+            // 
+            this.tBoxCookie.Location = new System.Drawing.Point(153, 167);
+            this.tBoxCookie.Name = "tBoxCookie";
+            this.tBoxCookie.Size = new System.Drawing.Size(428, 25);
+            this.tBoxCookie.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.tBoxCookie);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tBoxOutput);
-            this.Controls.Add(this.tBoxInput);
+            this.Controls.Add(this.tBoxURL);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -97,11 +118,13 @@ namespace test_dll
 
         #endregion
 
-        private System.Windows.Forms.TextBox tBoxInput;
+        private System.Windows.Forms.TextBox tBoxURL;
         private System.Windows.Forms.TextBox tBoxOutput;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tBoxCookie;
     }
 }
 
