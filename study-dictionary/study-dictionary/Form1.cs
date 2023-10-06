@@ -22,12 +22,14 @@ namespace study_dictionary
             InitializeComponent();
         }
 
+        // 값 추가
         private void button1_Click(object sender, EventArgs e)
         {
             _i += 1;
             dicStrStr.Add(string.Format("{0}",_i), string.Format("Value_{0}",_i));
         }
 
+        // 하나씩 Show
         private void button2_Click(object sender, EventArgs e)
         {
             foreach(KeyValuePair<string,string> item in dicStrStr)
@@ -36,6 +38,7 @@ namespace study_dictionary
             }
         }
 
+        // 한번에 Show
         private void button3_Click(object sender, EventArgs e)
         {
             string rst = string.Empty;
@@ -46,6 +49,7 @@ namespace study_dictionary
             MessageBox.Show(rst);
         }
 
+        // 키에 따른 값 수정
         private void button4_Click(object sender, EventArgs e)
         {
             string dicKey = tBoxModify.Text;
@@ -55,6 +59,7 @@ namespace study_dictionary
             }
         }
 
+        // 키에 따른 값 가져오기
         private void button5_Click(object sender, EventArgs e)
         {
             string dicKey = tBoxGet.Text;
@@ -68,6 +73,8 @@ namespace study_dictionary
             }
         }
 
+
+        // 과거 키를 현재 키로 수정
         private void button6_Click(object sender, EventArgs e)
         {
             string oldKey = tBoxOld.Text;
