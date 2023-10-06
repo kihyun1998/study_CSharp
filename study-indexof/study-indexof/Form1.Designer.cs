@@ -38,6 +38,7 @@ namespace study_indexof
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -102,7 +103,7 @@ namespace study_indexof
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(41, 408);
+            this.button7.Location = new System.Drawing.Point(44, 376);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(135, 83);
             this.button7.TabIndex = 6;
@@ -112,7 +113,7 @@ namespace study_indexof
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(228, 408);
+            this.button8.Location = new System.Drawing.Point(223, 376);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(135, 83);
             this.button8.TabIndex = 7;
@@ -122,7 +123,7 @@ namespace study_indexof
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(404, 408);
+            this.button9.Location = new System.Drawing.Point(412, 376);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(135, 83);
             this.button9.TabIndex = 8;
@@ -130,11 +131,22 @@ namespace study_indexof
             this.button9.UseVisualStyleBackColor = true;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(210, 474);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(164, 42);
+            this.button10.TabIndex = 9;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 550);
+            this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -161,6 +173,7 @@ namespace study_indexof
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button10;
     }
 }
 

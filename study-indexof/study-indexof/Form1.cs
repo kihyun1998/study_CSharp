@@ -12,7 +12,7 @@ namespace study_indexof
 {
     public partial class Form1 : Form
     {
-        string _txt = "Hello, World s!!! Hey @@@ What is \n This is Just Text Line";
+        string _txt = "Hello,World s!!!Hey@@@What is\nThis is Just Text Line";
 
         public Form1()
         {
@@ -62,6 +62,11 @@ namespace study_indexof
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBox.Show(_txt.Substring(0, _txt.IndexOf("\n")));
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(_txt.Substring(_txt.IndexOf("!!!")+3, _txt.IndexOf("@@@")- _txt.IndexOf("!!!")-3));
         }
     }
 }
