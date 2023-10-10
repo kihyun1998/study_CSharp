@@ -93,5 +93,11 @@ namespace study_dictionary
                 }
             }
         }
+
+        // 전부 초기화
+        private void button7_Click(object sender, EventArgs e)
+        {
+            dicStrStr.Clear();
+        }
     }
 }

@@ -41,6 +41,7 @@ namespace study_dictionary
             this.tBoxNew = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -136,7 +137,7 @@ namespace study_dictionary
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(333, 242);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 19);
+            this.label1.Size = new System.Drawing.Size(27, 15);
             this.label1.TabIndex = 10;
             this.label1.Text = "old";
             // 
@@ -145,15 +146,26 @@ namespace study_dictionary
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(333, 273);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 19);
+            this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 11;
             this.label2.Text = "new";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(39, 350);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(97, 30);
+            this.button7.TabIndex = 12;
+            this.button7.Text = "초기화";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 392);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tBoxNew);
@@ -187,6 +199,7 @@ namespace study_dictionary
         private System.Windows.Forms.TextBox tBoxNew;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button7;
     }
 }
 
