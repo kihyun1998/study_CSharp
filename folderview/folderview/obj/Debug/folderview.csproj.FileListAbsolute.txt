@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\bin\Debug\folderview.exe.config
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\bin\Debug\folderview.exe
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\bin\Debug\folderview.pdb
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.Form1.resources
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.Properties.Resources.resources
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.csproj.GenerateResource.cache
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.exe
+C:\Users\User\source\repos\study_CSharp\folderview\folderview\obj\Debug\folderview.pdb
