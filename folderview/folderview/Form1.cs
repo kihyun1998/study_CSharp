@@ -57,9 +57,18 @@ namespace folderview
             // 해당 키를 가진 노드가 있는지 검사
             if(nodes.ContainsKey(path))
             {
+                MessageBox.Show(String.Format("Yes : {0}, level : {1} nodes[0]: {2}", nodes[nodes.IndexOfKey(path)].Text, nodes[nodes.IndexOfKey(path)].Level,nodes[0]));
                 // 노드가 있다면 해당 키의 노드의 인덱스의 노드를 반환
                 // 간단하게 표현하면 중복되는 노드 그대로 반환
                 return nodes[nodes.IndexOfKey(path)];
+            }
+            else
+            {
+                MessageBox.Show(String.Format("No"));
+                foreach(TreeNode tNode in nodes)
+                {
+                    MessageBox.Show(tNode.Text);
+                }
             }
 
             // TreeNodeCollection에 key, name으로 노드 추가
