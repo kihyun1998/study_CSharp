@@ -65,7 +65,7 @@ namespace study_tree
 
         private void treeView1_NodeMouseDoubleClick(object sender, TreeNodeMouseClickEventArgs e)
         {
-            MessageBox.Show(e.Node.FullPath)
+            MessageBox.Show(e.Node.FullPath);
             string selectedNodePath = Path.Combine(e.Node.FullPath);
             if (File.Exists(selectedNodePath))
             {
